@@ -15,7 +15,7 @@ if ( trapped)
 {
 buf.push("<div" + (jade.attr("style", 'margin-top: 20px; padding: 10px; border: 3px solid ' + styles.headerColor + '; background-color: #ffd2d2; color: #384c53;', true, false)) + "><div><b>Recipients</b></div><pre><code>" + (jade.escape(null == (jade_interp = trapped) ? "" : jade_interp)) + "</code></pre></div>");
 }
-buf.push("</td></tr></table></td></tr><tr><td align=\"center\" valign=\"top\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" class=\"layout-footer\"><tr><td valign=\"top\" style=\"text-align: left;\" class=\"layout-footer-item\">*|HTML:unsubscribe_html|*</td><td valign=\"top\" class=\"layout-footer-item\">");
+buf.push("</td></tr></table></td></tr><tr><td align=\"center\" valign=\"top\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" class=\"layout-footer\"><tr><td valign=\"top\" style=\"text-align: left;\" class=\"layout-footer-item\">{{{unsubscribe_html}}}</td><td valign=\"top\" class=\"layout-footer-item\">");
 if ( social.twitter.url)
 {
 buf.push("<a" + (jade.attr("href", social.twitter.url, false, false)) + ">" + (jade.escape(null == (jade_interp = social.twitter.handle + ' on Twitter') ? "" : jade_interp)) + "</a><span>&nbsp;&nbsp;&nbsp;</span>");
